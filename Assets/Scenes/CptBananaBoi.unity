@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657815, g: 0.49641192, b: 0.57481617, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -212,9 +212,10 @@ Transform:
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1001 &913084400
 PrefabInstance:
@@ -225,7 +226,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3314129510180104416, guid: 1ec002f16ebd74bb3b741407f8787943, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3314129510180104416, guid: 1ec002f16ebd74bb3b741407f8787943, type: 3}
       propertyPath: m_LocalPosition.x
@@ -275,8 +276,35 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Ship
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 3314129510180104417, guid: 1ec002f16ebd74bb3b741407f8787943, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 1ec002f16ebd74bb3b741407f8787943, type: 3}
+--- !u!1 &941454531 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3314129510180104418, guid: 1ec002f16ebd74bb3b741407f8787943, type: 3}
+  m_PrefabInstance: {fileID: 913084400}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &941454534 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 3314129510180104416, guid: 1ec002f16ebd74bb3b741407f8787943, type: 3}
+  m_PrefabInstance: {fileID: 913084400}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &941454535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941454531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 626c3cba33389b546a6f1ac66cb105d9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forwardspeed: 25
+  strafespeed: 7.5
+  hoverspeed: 5
+  lookRateSpeed: 90
 --- !u!1 &1996146371
 GameObject:
   m_ObjectHideFlags: 0
@@ -353,13 +381,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1996146371}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 15, z: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.12, y: 3.57, z: -9.34}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+  m_Father: {fileID: 941454534}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2078244377
 GameObject:
   m_ObjectHideFlags: 0
@@ -401,9 +430,10 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -3.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &4880833827835548007
 PrefabInstance:
@@ -418,7 +448,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1573247611158236520, guid: 4e3f6521c3c1d4f7ebf0509e04668e4d, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1573247611158236520, guid: 4e3f6521c3c1d4f7ebf0509e04668e4d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -475,7 +505,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 384096361530088135, guid: d4bae23802a9c4e1081ca11252a169f1, type: 3}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 384096361530088135, guid: d4bae23802a9c4e1081ca11252a169f1, type: 3}
       propertyPath: m_LocalPosition.x
