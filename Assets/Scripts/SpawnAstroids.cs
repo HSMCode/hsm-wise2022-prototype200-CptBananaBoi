@@ -7,7 +7,7 @@ public class SpawnAstroids : MonoBehaviour
 
     // Varibales
     private float repeatRateOnStart = 0.5f;
-    public GameObject Astroid;
+    public GameObject BlueAsteroid;
 
     public float astroidDistance = 40f;
 
@@ -32,7 +32,7 @@ public class SpawnAstroids : MonoBehaviour
         if (repeatRateModifier <= 5)
         {
             // Instantiate a clone from the prefab Astroid at generated position
-            Instantiate(Astroid, GenerateSpawnPosition(), Astroid.transform.rotation);
+            Instantiate(BlueAsteroid, GenerateSpawnPosition(), BlueAsteroid.transform.rotation);
         }
         else
         {
