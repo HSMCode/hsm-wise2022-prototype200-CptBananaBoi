@@ -12,9 +12,14 @@ public class MoveAstroids : MonoBehaviour
     private Rigidbody _astroidRb;
     private GameObject _ship;
 
+    
+
+
     // Start is called before the first frame update
     void Start()
     {
+        
+
         _astroidRb = GetComponent<Rigidbody>();
         _ship = GameObject.FindWithTag("Ship");
     }
@@ -43,9 +48,11 @@ public class MoveAstroids : MonoBehaviour
     void FixedUpdate()
     {
         //direction of flight, slight angle towards ship
-        if(left){
+        if(left)
+        {
             _astroidRb.AddForce(((_ship.transform.position - transform.position).normalized) * speed*20);
-        }else
+        }
+        else
         {
             _astroidRb.AddForce(((_ship.transform.position - transform.position).normalized)*-1 * speed*20);
         }
