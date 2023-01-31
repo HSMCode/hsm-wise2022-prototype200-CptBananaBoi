@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class CountdownTimer : MonoBehaviour
 {
    //variables
    public float currentTime = 0f;
-   float startingTime = 10f;
+   public float startingTime = 10f;
 
    //Connection to Canvas Text
-   public Text countdownText;
+   public Text CountDownText;
 
    void Start()
    {
@@ -24,15 +25,15 @@ public class CountdownTimer : MonoBehaviour
     currentTime -= 1 * Time.deltaTime;
 
     //displays whole number
-    countdownText.text = currentTime.ToString("0");
+    CountDownText.text = currentTime.ToString("0");
 
     // changing color
-    countdownText.color = Color.red;
+    CountDownText.color = Color.red;
 
     //makes countdown stop at 0
     if(currentTime <= 0)
     {
-       currentTime = 0; 
+       SceneManager.LoadScene("GameOver"); 
     }
    }
 }

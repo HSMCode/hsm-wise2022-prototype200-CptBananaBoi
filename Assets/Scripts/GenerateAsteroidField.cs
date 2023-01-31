@@ -14,7 +14,7 @@ public class GenerateAsteroidField : MonoBehaviour
         for (int loop = 0; loop < asteroidCount; loop++)
         {
             Transform temp = Instantiate(asteroidPrefab, Random.insideUnitSphere * FieldRadius, Random.rotation);
-            temp.localScale = temp.localScale * Random.Range(0.5f, 50f);
+            temp.localScale = temp.localScale * Random.Range(5f, 150f);
         }
     }
 

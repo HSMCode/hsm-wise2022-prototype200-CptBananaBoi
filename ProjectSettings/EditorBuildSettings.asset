@@ -4,5 +4,20 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Main Menu.unity
+    guid: 65929634905c35443b159293b9741a21
+  - enabled: 1
+    path: Assets/Scenes/Explaination.unity
+    guid: 8bffdd5eeab83b94e9d4a79c6b73802a
+  - enabled: 1
+    path: Assets/Scenes/CptBananaBoi.unity
+    guid: 19126c345cd0d4c0d88cd2a520018c65
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: c9f5b55595065bb4ebb842a3f2b462f1
+  - enabled: 1
+    path: Assets/Scenes/GameWon.unity
+    guid: 79f597f8fce1a96439b3f47177b22657
   m_configObjects: {}
